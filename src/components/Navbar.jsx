@@ -12,7 +12,7 @@ export default function Navbar() {
                 <nav>
                     <ul>
                         <li><NavLink to="/Home">Home</NavLink></li>
-                        <li><NavLink to="/Login">Login</NavLink></li>
+                        <li><NavLink to="/Login">Log-in</NavLink></li>
                         <li><NavLink to="/SignUp">Sign-in</NavLink></li>
                         <li><NavLink to="/Map">Map</NavLink></li>
                         <li><NavLink to="/About">About</NavLink></li>
