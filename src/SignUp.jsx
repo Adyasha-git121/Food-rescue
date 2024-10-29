@@ -3,7 +3,7 @@ import "./SignUp.css";
 
 export default function SignUp() {
     let [user,setUser] = useState({
-        username:"Adyasha",
+        username:"",
         email:"",
         phone:"",
         password:"",

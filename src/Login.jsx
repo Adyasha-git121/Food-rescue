@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./login.css";
+import { Link } from "react-router-dom";
+
 export default function Login() {
     let [user,setUser] = useState({
         username:"",
@@ -52,10 +54,10 @@ export default function Login() {
                                     value={user.username}/>
                             </div>
                             <div>
-                                <label html for="password">password</label>
+                                <label html for="password">Password</label>
                                     <input type="text"
                                     name="password"
-                                    placeholder="password"
+                                    placeholder="Password"
                                      id="password"
                                      required
                                     autoComplete="off" 
@@ -67,7 +69,7 @@ export default function Login() {
                             <a href="#"><p>Forgot password ?</p></a>
                             <button onClick={handleSubmit} className="btn-grp">Login</button>
                             <div className="div-last">
-                                <p>did not have an account? <a href="#" width="100%">sign in</a></p>
+                                <p>Didn't have an account? <Link to="/Signup" >Signin</Link></p>
                             </div>
                         </form>
                     </div>

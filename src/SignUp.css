@@ -48,6 +48,7 @@
     margin: 1px;
     border: 2px solid #ccc;
     border-radius: 3px;
+    
   }
   
   .form button {
@@ -59,5 +60,16 @@
     cursor: pointer;
     margin-top: 10px; /* Add spacing after the last input field */
   }
+
+  #email{
+    margin-left: 33px;
+  }
+
+  #phone{
+    margin-left: 28px;
+  }
+
+  
+
 
   

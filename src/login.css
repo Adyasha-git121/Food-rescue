@@ -57,6 +57,10 @@
     border: 1px solid #ccc;
     border-radius: 3px;
   }
+
+  #password{
+    margin-left: 5px;
+  }
   
   .form button {
     padding: 10px 20px;

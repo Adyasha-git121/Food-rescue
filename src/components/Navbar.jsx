@@ -11,11 +11,9 @@ export default function Navbar() {
                 </div>
                 <nav>
                     <ul>
-                        <li><NavLink to="/Home">Home</NavLink></li>
-                        <li><NavLink to="/Login">Log-in</NavLink></li>
-                        <li><NavLink to="/SignUp">Sign-in</NavLink></li>
-                        <li><NavLink to="/Map">Map</NavLink></li>
+                        <li><NavLink to="/Home">Home</NavLink></li>                       
                         <li><NavLink to="/About">About</NavLink></li>
+                        <li><NavLink to="/Login">Log-in</NavLink></li>
                     </ul>
                 </nav>
             </div>
