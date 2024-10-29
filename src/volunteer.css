@@ -1,0 +1,86 @@
+.acceptdecline {
+  width: 10px;
+}
+
+.volbody {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.volunteerprofile {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  /* left: -100px; */
+  background-color: rgb(69, 179, 69);
+}
+
+.volpro {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  text-decoration: underline;
+  font-size: 32px;
+  color: black;
+  top: -20px;
+}
+.voldetails {
+  position: relative;
+  text-align: center;
+  top: -20px;
+  left: -10px;
+  font-size: 22px;
+  padding-left: 20px;
+  color: black;
+}
+.volunteerimg {
+  position: relative;
+  top: -30px;
+  border-radius: 100%;
+}
+
+.table-content{
+    border-collapse: collapse;
+    margin-left:20px ;
+    margin-right:20px ;
+    background-color:darkgreen;
+    /* border-radius: 10px; */
+    border: 2px solid rgba(255,255,255,.2);
+    border-color: aliceblue;
+  position: relative;
+  /* left: -10px; */
+}
+
+.table td{
+    border: 2px solid rgba(255,255,255,.2);
+    border-color: aliceblue;
+  position: relative;
+  
+  /* left: -10px; */
+}
+.table th{
+    border: 2px solid rgba(255,255,255,.2);
+    border-color: aliceblue;
+  position: relative;
+  /* left: -10px; */
+}
+
+.btnnn{
+    width: 70%;
+    height:30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 10px;
+    color:darkblue;
+    font-weight: 700;
+}

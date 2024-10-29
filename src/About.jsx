@@ -6,7 +6,7 @@ export default function About() {
                 <div className="container-grid">
                    <div className="para-container">
 
-                   <h2>Why Choosing use?</h2>
+                   <h2>Why Choosing Us?</h2>
 
 
 

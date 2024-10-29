@@ -1,0 +1,79 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 2px;
+  border-color: aliceblue;
+}
+.donateform {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.address,
+.items,
+.quantity,
+.contact,
+.information {
+  padding: 10px;
+}
+
+.address input {
+  margin-left: 10px;
+}
+.items input {
+  margin-left: 25px;
+}
+
+.quantity input {
+  margin-left: 5px;
+}
+
+.contact input {
+  margin-left: 10px;
+}
+
+.submitbtn {
+  align-items: center;
+  width: 100%;
+}
+
+.maparea {
+  border-radius: 10px;
+}
+
+.locate-map-btn {
+  position: relative;
+  right: 10px;
+  top: 170px;
+  width: 20px;
+  height: px;
+  text-align: center;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.locate-map-btn button {
+  width: 20px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.locate-map-btn img {
+    position: relative;
+    right: 15px;
+    top: -15px;
+    width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
