@@ -1,4 +1,5 @@
 steps must be written in terminal
+
 step 1-
 npm i
 
