@@ -4,6 +4,7 @@ import axios from "axios";
 import Map from "./Map";
 import { Link } from "react-router-dom";
 
+
 function Volunteer() {
   const [columns, setColumns] = useState([]);
   const [records, setRecords] = useState([]);
@@ -31,6 +32,29 @@ function Volunteer() {
       })
       .catch((err) => console.log(err));
   }
+
+function handlemapview(userId){
+  const [user, setUser] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Function to fetch user by ID
+    const fetchUserById = async (id) => {
+      try {
+        const response = await axios.get(`http://localhost:3010/users/${id}`);
+        setUser(response.data);
+      } catch (err) {
+        setError("User not found or error fetching data");
+      }
+    };
+
+    fetchUserById(userId);
+  }, [userId]);
+
+  if (error) return <div>{error}</div>;
+  if (!user) return <div>Loading...</div>;
+  
+};
   return (
     <>
       <div className="volbody">
@@ -96,9 +120,10 @@ function Volunteer() {
                     </button>
                   </td>
                   <td>
-                    <button className="btnnn">
-                      <Link to="/Map">View</Link>
-                    </button>
+                    <Link className="btnnn"
+                    to={{ pathname: "/Map", state: { latitude: d.Latitude,longitude: d.Longitude } }}>
+                      View
+                    </Link>
                   </td>
                 </tr>
               ))}
@@ -109,5 +134,6 @@ function Volunteer() {
     </>
   );
 }
+
 
 export default Volunteer;

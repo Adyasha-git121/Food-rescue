@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
   justify-content: center;
@@ -44,17 +45,19 @@
 
 .submitbtn {
   align-items: center;
-  width: 100%;
+  width: 50px;
 }
 
 .maparea {
   border-radius: 10px;
+  position: relative;
+  
 }
 
 .locate-map-btn {
   position: relative;
-  right: 10px;
-  top: 170px;
+  /* right: 10px;
+  top: 170px; */
   width: 20px;
   height: px;
   text-align: center;

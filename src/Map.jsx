@@ -1,30 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import "leaflet-routing-machine";
+import { useLocation } from 'react-router-dom';
 
-function RoutingComponent() {
+function RoutingComponent({ waypoints }) {
   const map = useMap();
 
   useEffect(() => {
-    if (!map) return;
-
+    if (!map || !waypoints) return;
+    
     const routingControl = L.Routing.control({
-      waypoints: [
-        L.latLng(20.449914, 85.902751),
-        L.latLng(20.484264, 85.822162)
-      ],
+      waypoints: waypoints.map(point => L.latLng(point.lat, point.lng)),
       routeWhileDragging: true,
     }).addTo(map);
-
     return () => map.removeControl(routingControl); // Clean up on unmount
-  }, [map]);
+  }, [map,waypoints]);
 
   return null;
 }
 
 export default function Map() {
+  const location = useLocation();
+  const { latitude, longitude } = location.state || {};
+  const [waypoints, setWaypoints] = useState([
+    { lat: latitude||20.444264 , lng: longitude||85.832162  }, // First waypoint from location or default
+    { lat: 20.484264, lng: 85.822162 }  // Second static waypoint
+  ]);
+  useEffect(() => {
+    if (latitude && longitude) {
+      setWaypoints([
+        { lat: latitude, lng: longitude },     // Update first point with dynamic coordinates
+        { lat: 20.484264, lng: 85.822162 }     // Second static point
+      ]);
+    }
+  }, [latitude, longitude]); 
   return (
     <div>
       <MapContainer
@@ -42,7 +53,7 @@ export default function Map() {
           <Popup>You are here</Popup>
         </Marker>
 
-        <RoutingComponent />
+        <RoutingComponent waypoints={waypoints}/>
       </MapContainer>
     </div>
   );
