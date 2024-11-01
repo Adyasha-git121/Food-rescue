@@ -4,6 +4,8 @@ import "./Donate.css";
 import "leaflet/dist/leaflet.css";
 import useGeoloaction from "./useGeoloaction";
 import axios from "axios";
+import LocationMarker from "./LocationMarker";
+
 
 function Donate() {
   const ZOOM_LEVEL = 13;
@@ -39,6 +41,14 @@ function Donate() {
     .then(res =>{
       alert("Request submited");
     }).catch(err =>console.log(err));
+  };
+
+  const handleLocationSelect = (latlng) => {
+    setData({
+      ...inputdata,
+      Latitude: latlng.lat,
+      Longitude: latlng.lng
+    });
   };
 
   return (
@@ -81,9 +91,9 @@ function Donate() {
               onChange={e => setData({...inputdata,Additionalinfo:e.target.value })}
             />
           </div>
-          <input type="submit" value="Submit" className="submitbtn"/>
+          <input type="submit" value="Submit" className="submitbtn" />
         </form>
-
+        <form>
         <MapContainer
           className="maparea"
           center={[20.459815, 85.881194]}
@@ -103,7 +113,9 @@ function Donate() {
               <Popup>You are here</Popup>
             </Marker>
           )}
-        </MapContainer>
+          <LocationMarker onLocationSelect={handleLocationSelect} />
+        </MapContainer>        
+        </form>
         <div className="locate-map-btn">
           <button onClick={showMyLocation}>
             <img src="./images/compass.png" alt="locate" height="50px" />

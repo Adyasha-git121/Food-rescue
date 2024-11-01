@@ -1,6 +1,7 @@
 {
   "user": [
     {
+<<<<<<< HEAD
       "id": "72b1",
       "Name": "Deenesh Mishra",
       "Contact": "9756432134",
@@ -21,6 +22,39 @@
       "Additionalinfo": "hell lot of items ",
       "Latitude": "",
       "Longitude": ""
+=======
+      "id": "c745",
+      "Name": "bibhutendu paikaray paikaray",
+      "Contact": "7894284697",
+      "Address": "rajnedra nagar",
+      "Items": "rice",
+      "Quantity": "2",
+      "Additionalinfo": "pick asap",
+      "Latitude": 20.456741066388776,
+      "Longitude": 85.90161973756041
+    },
+    {
+      "id": "ef50",
+      "Name": "deeenesh",
+      "Contact": "7894593493534",
+      "Address": "bbsr",
+      "Items": "paneer",
+      "Quantity": "3",
+      "Additionalinfo": "ggggg",
+      "Latitude": 20.447946022032358,
+      "Longitude": 85.8977924688952
+    },
+    {
+      "id": "cd79",
+      "Name": "Adyasha Sahoo",
+      "Contact": "546547746567",
+      "Address": "cdr",
+      "Items": "dal",
+      "Quantity": "4",
+      "Additionalinfo": "bhiajdiad",
+      "Latitude": 20.439483053479403,
+      "Longitude": 85.88474333279011
+>>>>>>> 45324d0b60be0bdcc7440181f5846296e221a8a9
     }
   ]
 }
