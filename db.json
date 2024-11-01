@@ -1,7 +1,7 @@
 {
   "user": [
     {
-<<<<<<< HEAD
+
       "id": "72b1",
       "Name": "Deenesh Mishra",
       "Contact": "9756432134",
@@ -22,7 +22,8 @@
       "Additionalinfo": "hell lot of items ",
       "Latitude": "",
       "Longitude": ""
-=======
+    },
+    {
       "id": "c745",
       "Name": "bibhutendu paikaray paikaray",
       "Contact": "7894284697",
@@ -54,7 +55,6 @@
       "Additionalinfo": "bhiajdiad",
       "Latitude": 20.439483053479403,
       "Longitude": 85.88474333279011
->>>>>>> 45324d0b60be0bdcc7440181f5846296e221a8a9
     }
   ]
 }
