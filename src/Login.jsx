@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
     let [user,setUser] = useState({
         username:"",
         password:"",
     });
+
+    let Navigate = useNavigate();
+
+
 
     let handleInput = (event) =>{
         console.log(event.target.value); //it gives letter 
@@ -22,7 +26,8 @@ export default function Login() {
 
     let handleSubmit =(event) =>{
         event.preventDefault();
-        alert(user);
+        Navigate("/Home");
+        alert("logged in successfully");
     };
 
 
@@ -35,7 +40,7 @@ export default function Login() {
             <div className="section-registration">
                 <div className="container-login">
                     <div className="photo-login">
-                    <img src="./images/needy2.jpg" alt="the girl is trying to login"
+                    <img src="./images/needy.jpg" alt="the girl is trying to login"
                                     width="500" height="450"
                                 />
                     </div>

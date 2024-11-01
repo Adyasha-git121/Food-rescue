@@ -75,12 +75,13 @@ function Donate() {
           <div className="information">
             Additional Information:<br></br>
             <textarea
+            className="information"
               placeholder="Information for volunteer"
               id="informationid"
               onChange={e => setData({...inputdata,Additionalinfo:e.target.value })}
             />
           </div>
-          <input type="submit" value="Submit" className="submitbtn" />
+          <input type="submit" value="Submit" className="submitbtn"/>
         </form>
 
         <MapContainer

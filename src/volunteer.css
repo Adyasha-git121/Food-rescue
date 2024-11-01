@@ -6,12 +6,18 @@
   display: flex;
   flex-direction:row;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+ 
 }
+
 .volunteerprofile {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(158, 137, 137, 0.2);
   position: relative;
   border-radius: 10px;
   height: 400px;
@@ -19,18 +25,20 @@
   position: relative;
   align-items: center;
   /* left: -100px; */
-  background-color: rgb(69, 179, 69);
+  background-color: rgb(26, 149, 26);
+
 }
 
-.volpro {
-  position: relative;
-  text-align: center;
-  padding: 20px;
-  text-decoration: underline;
-  font-size: 32px;
-  color: black;
-  top: -20px;
-}
+
+  .volpro {
+    flex: 1; /* Allow the title to expand */
+    font-size: 1.2em; /* Increase font size for title */
+    font-weight: bold; /* Make the title bolder */
+    margin-right: 20px; /* Add space between title and image */
+    color: #00380d;
+    text-decoration:underline;
+  }
+
 .voldetails {
   position: relative;
   text-align: center;
@@ -38,49 +46,152 @@
   left: -10px;
   font-size: 22px;
   padding-left: 20px;
-  color: black;
+  color: rgb(15, 0, 0);
+  font-weight: 100;
 }
 .volunteerimg {
   position: relative;
-  top: -30px;
+  top: -15px;
   border-radius: 100%;
-}
-
-.table-content{
-    border-collapse: collapse;
-    margin-left:20px ;
-    margin-right:20px ;
-    background-color:darkgreen;
-    /* border-radius: 10px; */
-    border: 2px solid rgba(255,255,255,.2);
-    border-color: aliceblue;
-  position: relative;
-  /* left: -10px; */
-}
-
-.table td{
-    border: 2px solid rgba(255,255,255,.2);
-    border-color: aliceblue;
-  position: relative;
   
-  /* left: -10px; */
 }
-.table th{
-    border: 2px solid rgba(255,255,255,.2);
-    border-color: aliceblue;
-  position: relative;
-  /* left: -10px; */
+.set-loc-btn {
+  background-color: #032004; /* Green */
+  border: none;
+  color: rgb(123, 186, 128);
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration:dotted; 
+
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer; 
+
+  border-radius: 8px;
 }
+
+/*.table-content {
+  width: 100%; /* Set the table to fill available width 
+  max-width: 1200px; /* Set a maximum width to prevent overflow on smaller screens 
+  margin: 20px auto; /* Center the table horizontally */
+ /* border-collapse: collapse;*/ /* Remove borders between cells for cleaner look 
+  overflow-x:hidden; 
+}
+
+.table-content th, .table-content td {
+  padding: 10px; /* Add padding for better readability 
+  border: 0px solid rgba(0, 0, 0, 0.2); /* Add subtle border 
+  text-align: center; 
+}
+
+.table-content thead th {
+  background-color: #012c05; /* Set header background color 
+  color: white; /* Set header text color 
+}
+
+.acceptdecline {
+  text-align:center; /* Center action buttons within the cell 
+  margin: 5px;
+  align-items: center;
+}
+
+.acceptdecline button {
+  margin: 5px; /* Add spacing between buttons 
+  align-items: center;
+  align-items: center;
+  font-size: 15px;
+ 
+}
+
+
+/* Style your buttons further (optional) 
+
 
 .btnnn{
     width: 70%;
     height:30px;
+  
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+   
+    color:rgb(2, 45, 4);
+    font-weight:500;
+    padding: 25px 20px; /* Adjust button padding 
+    border-radius:8px; /* Add rounded corners 
+    font-size:15px; 
+    align-items:center;
+   
+  
+   
+}
+
+.btnnn2 {
+  width: 100%;
+    height:60px;
     border-radius: 10px;
     outline: none;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    font-size: 10px;
-    color:darkblue;
+    font-size: 15px;
+    color:rgb(2, 32, 3);
     font-weight: 700;
+    
+}*/
+
+
+/*new*/
+/* General Table Styling */
+.table-content {
+  width: 100%; /* Set the table to fill available width */
+  border-collapse: collapse; /* Remove borders between cells for cleaner look */
+  margin-top: 20px;
 }
+
+.table-content th, .table-content td {
+  padding: 10px; /* Add padding for better readability */
+  text-align: left; /* Align text to the left */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Subtle border */
+}
+
+/* Table Header Styling */
+.table-content thead th {
+  background: linear-gradient(to right, #02571d, #00380d); /* Adjust colors as needed */
+  color: white;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Action and Map View Columns */
+.acceptdecline, .map-view {
+  text-align: center; /* Center content within these columns */
+}
+
+/* Action Buttons */
+.acceptdecline button, .btnnn2 {
+  margin: 5px; /* Add spacing between buttons */
+  padding: 5px 10px; /* Adjust button padding */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Indicate clickable button */
+}
+
+/* Optional Button Styling */
+.btnnn { /* Assuming this is your "Accept" button class */
+  background-color: green;
+  color: rgb(183, 201, 182);
+}
+
+.btnnn2 { /* Assuming this is your "View" button class */
+  background-color: #111010; /* Adjust color as needed */
+  color: rgb(4, 71, 12);
+}
+
+/* Additional Styling (Optional) */
+/*.table-content tr:nth-child(even) { /* Alternate row background color (optional) 
+  background-color: #031801;
+}
+*/

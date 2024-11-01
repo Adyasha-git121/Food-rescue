@@ -7,13 +7,14 @@ export default function Navbar() {
         <header>
             <div className="container">
                 <div className="Logo">
-                    <a href="/">Annaseva</a>
+                    <a href="/">Khādya Sebā</a>
                 </div>
                 <nav>
                     <ul>
-                        <li><NavLink to="/Home">Home</NavLink></li>                       
-                        <li><NavLink to="/About">About</NavLink></li>
-                        <li><NavLink to="/Login">Log-in</NavLink></li>
+                    <li><NavLink to="/Login">Log-in</NavLink></li>
+                    <li><NavLink to="/Home">Home</NavLink></li>                       
+                     <li><NavLink to="/About">About</NavLink></li>
+                     <li><NavLink to ="/Registration">Registration form</NavLink></li>
                     </ul>
                 </nav>
             </div>

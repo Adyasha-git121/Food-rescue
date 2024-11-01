@@ -80,6 +80,7 @@ button:focus-visible {
 }
 :root {
   background-color:#0b1e02;
+  background-image: url("./images/background.png");
   
 }
 
@@ -156,6 +157,11 @@ button {
 .btn1 {
   color: #0b1e02;
   font-weight: bold;
+}
+.btn2{
+  border:1rem black solid;
+    color: #0b1e02;
+    font-weight: bold;
 }
 
 /*state rule*/

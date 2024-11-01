@@ -14,14 +14,18 @@ function Volunteer() {
     });
   }, []);
 
+
+
   function handledecline(id) {
-    axios
+    axiosrgba(82, 71, 71, 0.2)
       .delete(`http://localhost:3010/user/${id}`)
       .then((res) => {
         alert("Declined request");
       })
       .catch((err) => console.log(err));
   }
+
+
 
   function handleaccept(id) {
     axios
@@ -35,18 +39,18 @@ function Volunteer() {
     <>
       <div className="volbody">
         <div className="volunteerprofile">
-          <div className="volpro">Volunteer Profile</div>
+          <div className="volpro"><h2>||Volunteer Profile||</h2></div>
           <div>
             <img
-              src="./images/_MG_4020.jpg"
-              height="150px"
+              src="./images/_MG_4020.jpg" alt="showing volunteer profile"
+             width="150" height="170"
               className="volunteerimg"
             />
           </div>
-          <div className="voldetails">
-            Bibhutendu Paikaray
-            <br />
-            bibhtendu1920@gmail.com
+          <div className="voldetails"> 
+          Anuj Mishra
+           <br />
+              bibhtendu1920@gmail.com
             <br />
             7894284697
             <br />
@@ -54,7 +58,9 @@ function Volunteer() {
             <div />
           </div>
           <div>
+            <button  className="set-loc-btn">
             <Link to="/Volmaploc">Set Location</Link>
+            </button>
           </div>
         </div>
         <div>
@@ -65,9 +71,11 @@ function Volunteer() {
                   <th key={i}>{c}</th>
                 ))}
                 <th>Action</th>
-                <th>Map View</th>
+                <th className="map-view">Map View</th>
               </tr>
             </thead>
+            {/*table-uppper-heading*/}
+
             <tbody>
               {records.map((d, i) => (
                 <tr key={i}>
@@ -91,12 +99,11 @@ function Volunteer() {
                     <button
                       onClick={(e) => handledecline(d.id)}
                       className="btnnn"
-                    >
-                      Decline
+                    >Decline
                     </button>
                   </td>
                   <td>
-                    <button className="btnnn">
+                    <button className="btnnn2">
                       <Link to="/Map">View</Link>
                     </button>
                   </td>

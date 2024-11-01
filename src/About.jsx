@@ -1,47 +1,47 @@
 export default function About() {
     return (
         <>
-        <main>
-            <section className="hero-section">
-                <div className="container-grid">
-                   <div className="para-container">
+            <main>
+                <section className="hero-section">
+                    <div className="container-grid">
+                        <div className="para-container">
 
-                   <h2>Why Choosing Us?</h2>
-
-
+                            <h2>Why Choosing Us?</h2>
 
 
-                      <p>Our company is committed to providing exceptional customer service and innovative solutions tailored to your unique needs. With our team of highly skilled professionals and a focus on quality, we strive to exceed your expectations and deliver results that drive your business forward. Whether you're looking for [specific service or product], we have the expertise and resources to help you achieve your goals.</p>
 
-                     
 
-                      <br></br>
-                      <p>We understand that every business has unique challenges and opportunities. Our tailored approach allows us to develop customized solutions that address your specific needs and goals. Whether you're looking to improve efficiency, reduce costs, or enhance customer satisfaction, we have the expertise to help you achieve your objectives.</p>
-                      <div className="button-grp">
-                                    
-                                    <a href="/">
-                                        <button className="btn22">Learn more</button>
-                                    </a>
-                         </div>
+                            <p>AnnSeva is more than just a platform; it's a movement. We're committed to making a real difference in our communities by reducing food waste and alleviating hunger.
+                            </p>
 
-                         
 
-                    
-                     
-                   </div>
-                   <div className="hero-images">
-                        <img src="./images/needy3.jpg" alt="home part is opened"
-                                    width="500" height="300"
-                                />
+
+                            <br></br>
+                            <p>Here's why you should choose AnnSeva:
+                                By using our app, you become part of a larger movement aimed at reducing food waste and combating hunger. Together, we can make a difference in our community while fostering a culture of sharing and sustainability.
+
+                                Join us today in our mission to save food and feed lives!
+                            </p>
+                            <div className="button-grp">
+
+                                <a href="/">
+                                    <button className="btn22">Learn more</button>
+                                </a>
+                            </div>
                         </div>
-                       
-                </div>
-                
+                        <div className="hero-images">
+                            <img src="./images/about.jpg" alt="home part is opened"
+                                width="500" height="300"
+                            />
+                        </div>
+
+                    </div>
 
 
 
-            </section>
-        </main>
+
+                </section>
+            </main>
         </>
 
     );

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./SignUp.css";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
     let [user,setUser] = useState({
@@ -8,6 +9,8 @@ export default function SignUp() {
         phone:"",
         password:"",
 });
+
+const Navigate = useNavigate();
 
 const handleInput=(e)=>{
     console.log(e);
@@ -22,7 +25,8 @@ const handleInput=(e)=>{
 };
 const handleSubmit=(e)=>{
     e.preventDefault();
-    alert(user);
+    Navigate("/Home");
+    alert("signed up succesfully");
 
 }
     return (
